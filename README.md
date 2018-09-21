@@ -4,7 +4,17 @@ By cloning this repo and running npm install you get a fast folder containing a 
 
 >:warning: If you clone this repo in a folder with a different name you need to fix the browserSync proxy defined in the `webpack.mix.js` file.
 
-Set your db credential in the .env file, run `php artisan migrate`, run `npm run dev` and (yes two times) `npm run watch` and you're ready to go... and to go pretty fast.
+- Clone the repo `git clone git@github.com:ssomenzi/fast.git`
+
+- Run `composer install`. 
+
+- Create your .env file duplicating the .env.example file. 
+
+- Set your db credential in the .env file. 
+
+- Run `php artisan key:generate`
+
+- Run `php artisan migrate`, run `npm run watch` and you're ready to go... and to go pretty fast.
 
 ## What this repo does
 
