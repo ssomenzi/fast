@@ -6,15 +6,19 @@ By cloning this repo and running npm install you get a fast folder containing a 
 
 - Clone the repo `git clone git@github.com:ssomenzi/fast.git`
 
+- cd in the fast directory `cd fast`
+
 - Run `composer install`. 
 
-- Create your `.env` file duplicating the `.env.example` file. 
+- Create your `.env` file duplicating the `.env.example` file `cp .env.example .env`. 
 
-- Set your db credential in the `.env` file. 
+- Set your db credentials in the `.env` file. 
 
 - Run `php artisan key:generate`
 
 - Run `php artisan migrate`.
+
+- Run `npm install`
 
 - Run `npm run watch` and you're ready to go... and to go pretty fast.
 
