@@ -8,13 +8,15 @@ By cloning this repo and running npm install you get a fast folder containing a 
 
 - Run `composer install`. 
 
-- Create your .env file duplicating the .env.example file. 
+- Create your `.env` file duplicating the `.env.example` file. 
 
-- Set your db credential in the .env file. 
+- Set your db credential in the `.env` file. 
 
 - Run `php artisan key:generate`
 
-- Run `php artisan migrate`, run `npm run watch` and you're ready to go... and to go pretty fast.
+- Run `php artisan migrate`.
+
+- Run `npm run watch` and you're ready to go... and to go pretty fast.
 
 ## What this repo does
 
