@@ -4,9 +4,9 @@ By cloning this repo and running npm install you get a fast folder containing a 
 
 >:warning: If you clone this repo in a folder with a different name you need to fix the browserSync proxy defined in the `webpack.mix.js` file.
 
-Set your db credential in the .env file, run `php artisan migrate` and you're ready to go... and to go pretty fast.
+Set your db credential in the .env file, run `php artisan migrate`, run `npm run dev` and (yes two times) `npm run watch` and you're ready to go... and to go pretty fast.
 
-What this repo does is:
+##What this repo does
 
 Gives you a Laravel 5.7 app with auth.
 
