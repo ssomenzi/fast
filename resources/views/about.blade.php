@@ -4,13 +4,11 @@
 <div class="flex items-center">
     <div class="md:w-1/2 md:mx-auto">
         <div class="rounded shadow">
-            <div class="font-medium text-lg text-teal-darker bg-teal p-3 rounded-t">
+            <div class="font-medium text-lg text-white bg-teal-dark p-3 rounded-t">
                 About
             </div>
             <div class="bg-white p-3 rounded-b">
-                <center>
-                    <example-component></example-component>
-                </center>
+                <example-component></example-component>
             </div>
         </div>
     </div>
