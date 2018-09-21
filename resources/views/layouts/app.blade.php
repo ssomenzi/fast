@@ -11,6 +11,8 @@
 
     <!-- Styles -->
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 <body class="bg-teal-lightest h-screen antialiased">
     <div id="app">
@@ -46,8 +48,5 @@
 
         @yield('content')
     </div>
-
-    <!-- Scripts -->
-    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 </html>

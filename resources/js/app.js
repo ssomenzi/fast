@@ -10,6 +10,12 @@ require('./bootstrap');
 window.Vue = require('vue');
 
 /**
+ * Then we import Turbolinks and initialize it.
+ */
+import Turbolinks from 'turbolinks'
+Turbolinks.start()
+
+/**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
@@ -17,6 +23,11 @@ window.Vue = require('vue');
 
 Vue.component('example-component', require('./components/ExampleComponent.vue'));
 
-const app = new Vue({
-    el: '#app'
-});
+import TurbolinksAdapter from 'vue-turbolinks'
+Vue.use(TurbolinksAdapter)
+
+document.addEventListener('turbolinks:load', () => {
+    let app = new Vue({
+        el: '#app'
+    })
+})

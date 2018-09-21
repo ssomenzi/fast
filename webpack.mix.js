@@ -19,7 +19,15 @@ mix.js('resources/js/app.js', 'public/js')
    .tailwind()
    .purgeCss()
    .browserSync({
-     proxy: 'https://fast.test'
+     proxy: 'https://fast.test',
+     snippetOptions: {
+      rule: {
+        match: /<\/head>/i,
+        fn: function (snippet, match) {
+          return snippet + match;
+        }
+      }
+    }
    });
 
 if (mix.inProduction()) {
